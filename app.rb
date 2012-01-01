@@ -142,6 +142,11 @@ class Repace < Sinatra::Application
     erb :index
   end
   
+  get '/strava' do
+    @strava_id = "#{('http://app.strava.com/rides/2984423').split('/')[4]}"
+    puts "http://app.strava.com/activities/#{@strava_id}/export_gpx"
+  end
+  
   post '/upload' do
     if is_file.nil?
       # send response as text/plain
