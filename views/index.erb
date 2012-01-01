@@ -1,0 +1,114 @@
+<section id="view_intro" class="container_12 clearfix">
+  <div class="shim">
+
+    <div class="grid_10 prefix_1">
+      <h2>Recalculate old route files and turn your GPS into a virtual training partner.</h2>
+    </div>
+
+    <div class="clear">&nbsp;</div>
+
+    <div class="grid_12">
+      <div>
+        <a class="button" href="javascript://"><span>Let's Get Started...</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section id="view_upload" class="container_12 clearfix">
+  <div class="shim">
+    
+    <form action="/upload" method="post" enctype="multipart/form-data" id="upload_form">
+      <div class="grid_3">
+        <div class="arrow">
+          <img src="img/arrow_up_right.png" width="62" height="48" alt="" />
+        </div>
+      </div>
+
+      <div class="grid_6">
+        <p><input type="file" name="file" value="" id="file" /></p>
+      </div>
+
+      <div class="clear">&nbsp;</div>
+    
+      <div class="grid_3 prefix_1">
+        <h4 id="upload_notice">Let’s begin by uploading a GPX file from your device.</h4>
+      </div>
+
+      <div class="grid_4">
+        <p><input type="submit" value="Upload Now" /></p>
+      </div>
+    </form>
+    
+  </div>
+</section>
+
+<section id="view_convert" class="container_12 clearfix">
+  <div class="shim">
+    
+    <form action="/convert" method="post" id="convert_form">
+      <div class="grid_6 prefix_3">
+        <h3 class="center"><span id="name">--</span></h3>
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <input type="text" name="hours" value="" id="convert_hours" size="2" class="autofocus" />
+              <small>hours</small>
+            </td>
+            <td><span>:</span></td>
+            <td>
+              <input type="text" name="minutes" value="" id="convert_minutes" size="2" />
+              <small>minutes</small>
+            </td>
+            <td><span>:</span></td>
+            <td>
+              <input type="text" name="seconds" value="" id="convert_seconds" size="2" />
+              <small>seconds</small>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="clear">&nbsp;</div>
+      
+      <div class="grid_4 prefix_4">
+        <p><input type="submit" value="Convert File" /></p>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<section id="view_download" class="container_12 clearfix">
+  <div class="shim">
+    <div class="grid_3 prefix_1">
+      <div class="position_ref">
+        <h4 id="download_notice">
+          Click and save the file to your desktop. It's ready for upload to your device.
+        </h4>
+        
+        <div id="download_arrow" class="arrow">
+          <img src="/img/arrow_down_right.png" width="86" height="63" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid_4">
+      <a id="download_link" target="_blank" href="">
+        <img src="/img/icon_gpx.2.png" width="98" height="124" alt="" />
+      </a>
+      <p id="start_over_wrapper">
+        <a id="start_over_link" href="javascript://">Start over with another file</a>
+      </p>
+    </div>
+  </div>
+</section>
+  
+<section id="view_loading" class="container_12 clearfix">
+  <div class="shim">
+    <div class="grid_12">
+      <img src="img/loading.gif" width="287" height="24" alt="" />
+      <p>Uploading file...</p>
+    </div>
+  </div>
+</section>
